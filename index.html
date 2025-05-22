@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>The Final Unblocker for EAMS</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+    // Hash function using SubtleCrypto
+    async function hashPassword(password) {
+      const encoder = new TextEncoder();
+      const data = encoder.encode(password);
+      const hashBuffer = await crypto.subtle.digest('SHA-256', data);
+      const hashArray = Array.from(new Uint8Array(hashBuffer));
+      return hashArray.map(b => b.toString(16).padStart(2, '0')).join('');
+    }
+
+    async function verifyPassword() {
+      const storedHash = "abffa4bbf2bcef539fc824770775eb0c9a0c50d9140c6f0ceb1d34ea4e5b304c"; // hash of "mypassword"
+      const userInput = prompt("Enter password to access this page:");
+      const inputHash = await hashPassword(userInput);
+
+      if (inputHash !== storedHash) {
+        alert("Incorrect password. Access denied.");
+        window.location.href = "access-denied.html"; // Or redirect to "access-denied.html"
+      }
+    }
+
+    verifyPassword();
+    </script>
+</head>
+<body>
+    <h1>The Final Unblocker for EAMS</h1>
+    <h4>Working as of May 21, 2025</h4>
+    <h6>Made by your one and only asian</h6>
+    <div class="link-list">
+        <pre>
+https://cosmogamy.fpr.net/
+https://cheesecats.happyforever.com/
+https://amirsuck.happyforever.com/
+https://forhms.epicgamer.org/
+https://ramberhead.clocking.ro/
+https://12bucklemyshoe.kalbas.com.vn/
+https://scifi0.eigenlicht.us/
+https://easydomain.dnet.hu/
+https://block-if-your-gay.jharrigan.net/
+https://essay.gov.technologybriefingcenter.com/
+https://skill.vocab.lekovic.ca/
+https://smart.sage.premierleaguepoints.com/
+https://arts.field.8tb.net/
+https://alumn.facts.finnie.me/
+https://area.level.southtrestle.com/
+https://how.prep.topmoto.pl/
+https://boxcat.radio-zvez.info/
+https://unclegroundbeef.michaelfoody.com/
+https://mindblown.michaelfoody.com/
+https://ajmal.hpc.tw/
+https://swisscheesebyjohn.malam.or.id/
+https://homework.maths.percentages.perona.cl/
+https://ryujinaerospace.shogun.ca/
+https://ik-heet-henk.laptopy.nl/
+https://shop.beautydiskount.ru/
+https://blahaj.duia.us/
+https://shop.lang.hm/
+https://shop.lang.hm/
+https://gamgasyoppakuteri-zenttodabi.gslb.info/
+https://ranamaddadaaaadjka.ve3.info/
+https://wutidontunderstand.defdc.com
+https://arxthegoat.ts0880.es/
+https://interstellarbynirbytes2.vercel.app/
+https://lol.skibiditoi.lat/
+https://imendez.sehol.eu/
+https://steves-lava-chicken.edah.us/
+https://reallycoolmathblahblahblah.the-schmidt-family.org/
+https://state.gov.jaycloudlab.com/
+https://pupil.gov.xxxtream.net/
+https://lab.clever.icp-seigyo.com/
+https://history.login.wiftee.com/
+https://login.knr.cl/
+https://zixypy.reticence.lol/
+https://dualpower.duia.eu/
+https://newapplephone.malam.or.id/
+https://greenzone.v6.army/
+https://lawless-zone.dns.army/
+https://lawless-zone.v6.rocks/
+https://wolf-zone.dns.army/
+https://sagamihara.dynv6.net/
+https://munfe.ro.wawan.web.id/
+https://deep-sea.dns.navy/
+https://vectorgpt.boxathome.net/
+https://femboysfr.lain.ch/ 
+https://theunionforever.tenspot.net/
+https://readmuvluv.happyforever.com/
+https://block.undo.cl/
+https://mylo.estic.org/
+https://idea.read.capella-technologies.com/
+https://rhp.ilove4ndan.com/
+https://rammerhead.d-n-s.name/
+
+
+        </pre>
+    </div>
+</body>
+</html>
