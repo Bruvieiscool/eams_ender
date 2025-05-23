@@ -5,7 +5,7 @@
     <title>The Final Unblocker for EAMS</title>
     <link rel="stylesheet" href="style.css">
     <script>
-    // Hash function using SubtleCrypto
+    
     async function hashPassword(password) {
       const encoder = new TextEncoder();
       const data = encoder.encode(password);
@@ -15,13 +15,13 @@
     }
 
     async function verifyPassword() {
-      const storedHash = "abffa4bbf2bcef539fc824770775eb0c9a0c50d9140c6f0ceb1d34ea4e5b304c"; // hash of "mypassword"
+      const storedHash = "abffa4bbf2bcef539fc824770775eb0c9a0c50d9140c6f0ceb1d34ea4e5b304c";
       const userInput = prompt("Enter password to access this page:");
       const inputHash = await hashPassword(userInput);
 
       if (inputHash !== storedHash) {
         alert("Incorrect password. Access denied.");
-        window.location.href = "access-denied.html"; // Or redirect to "access-denied.html"
+        window.location.href = "access-denied.html";
       }
     }
 
